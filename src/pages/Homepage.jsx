@@ -17,8 +17,8 @@ const Homepage = () => {
 
     return (
         <>
-            <div className='min-h-screen md:flex'>
-                <header className='w-full md:w-1/2 h-56 flex items-center justify-center md:flex-col md:h-screen'>
+            <div className='min-h-screen md:flex z-10'>
+                <header className='w-full md:w-1/2 h-56 flex items-center justify-center md:flex-col md:h-screen z-10'>
                     <h1 className='font-bold text-4xl'>QRCode <br /> <span className='font-normal'>Generator</span></h1>
 
                     <div className={`hidden md:block p-14 ${showQRCode ? 'opacity-100 h-fit' : 'opacity-0 h-0'} duration-[2s]`}>
@@ -27,8 +27,8 @@ const Homepage = () => {
                         </div>
                     </div>
                 </header>
-                <main className='w-full md:w-1/2 md:h-screen md:flex md:items-center md:justify-center'>
-                    <form onSubmit={handleGenerate} action="#" className='flex flex-col gap-4 px-14 justify-center md:w-full md:max-w-lg md:bg-slate-900 md:py-14 md:rounded-xl'>
+                <main className='w-full md:w-1/2 md:h-screen md:flex md:items-center md:justify-center z-10'>
+                    <form onSubmit={handleGenerate} action="#" className='flex flex-col gap-4 px-14 justify-center md:w-full md:max-w-lg md:bg-slate-900 md:bg-opacity-50 backdrop-blur-md md:py-14 md:rounded-xl'>
 
                         <div className='flex flex-col gap-2'>
                             <label htmlFor="value">Value QRCode</label>
