@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         return Math.random() * (max - min) + min;
     }
     return (
-        <>
+        <div>
             <div className="absolute h-screen w-full overflow-hidden">
                 {blonArr.map((index) => (
                     <div
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
                 ))}
             </div>
             {children}
-        </>
+        </div>
     )
 }
 
